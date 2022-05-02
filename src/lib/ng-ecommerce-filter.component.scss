@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.filter-brand {
+  overflow: hidden;
+  overflow-y: auto;
+}
+.serach_bar {
+  width: 95%;
+  margin: 0px 0px 5px 0px;
+  padding: 5px;
+}
+.show_stars {
+  color: #fff01f;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0px 3px 0px 3px;
+}
+
+.filter-brand h6 {
+  margin: 5px;
+  padding: 4px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.filter-brand > .filter_name {
+  font-weight: 500px;
+  font-size: 14px;
+  text-align: center;
+  color: rgb(56, 56, 56);
+}
+
+.filter-brand ul {
+  list-style: none;
+  padding: 0;
+  margin: 5px;
+}
+
+.filter-brand ul li {
+  width: 95%;
+  margin: auto;
+  padding: 2px;
+  font-family: system-ui;
+  font-size: 12px;
+}
+
+.filter-brand ul li label {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #4d4c4c;
+  font-weight: 500;
+  display: flex;
+}
+.filter-brand ul li input {
+  vertical-align: middle;
+}
+::ng-deep .filter-brand ul li label span {
+  vertical-align: middle;
+  margin-left: 2px !important;
+}
+
+.color_filer_div {
+  margin: 3px 5px 3px 5px;
+
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+  border: 1px solid rgb(51, 51, 51);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #999 #ccc;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ccc;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 20px;
+}
+
+::ng-deep
+  mat-accordion
+  > mat-expansion-panel
+  > .mat-expansion-panel-content
+  > .mat-expansion-panel-body {
+  padding: 0 4px 2px;
+}
+::ng-deep mat-accordion mat-expansion-panel {
+  border: 1px solid #ccc;
+  padding: 15px !important;
+}
+::ng-deep mat-accordion mat-expansion-panel mat-expansion-panel-header {
+  padding: 2px 1px !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.bottom_filters_buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clear_filters {
+  text-align: right;
+}
+.count_filters {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+}
+.clear_filters label {
+  cursor: pointer;
+
+  color: rgb(54, 54, 54);
+  font-size: 12px;
+  font-weight: 500;
+}
+.clear_filters:hover a label {
+  color: rgb(204, 90, 124);
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+  transition: 1s;
+}
+::ng-deep .mat-expansion-panel-header-title,
+.mat-expansion-panel-header-description {
+  font-weight: 500;
+  color: #585151;
+}
+
+::ng-deep .f_child_text {
+  margin-left: 2px !important;
+}
+
+::ng-deep .master_serach_checkbox {
+  width: 15px;
+  height: 15px;
+  margin: 3px;
+}

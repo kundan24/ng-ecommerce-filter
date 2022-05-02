@@ -1,0 +1,53 @@
+<mat-accordion>
+  <mat-expansion-panel [expanded]="isOpen" [style.width]="FilterWidth">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{ FilterName }}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <input
+      *ngIf="ShowSerachBar"
+      type="text"
+      (input)="serach($event)"
+      placeholder="Serach "
+      class="serach_bar"
+    />
+    <div class="filter-brand" [style.max-height]="FilterHeight">
+      <ul>
+        <li *ngFor="let data of DataArr">
+          <label
+            ><input
+              class="master_serach_checkbox"
+
+              type="checkbox"
+              (change)="getSelectedCheckbox()"
+              value="{{ data | json }}"
+              name="{{ FilterNameNoSpace }}_kundan_kumar"
+            />
+            <div
+              *ngIf="ShowColorDots == true"
+              class="color_filer_div"
+              [style.background]="data.color_code"
+            ></div>
+            <span *ngIf="ShowStars" class="show_stars">
+              &#9733; </span
+            >
+           <span class="f_child_text"> {{data.title }}</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+    <div class="bottom_filters_buttons">
+      <div class="count_filters">
+        <a *ngIf="countSelected > 0 && ShowSelected == true">
+          <label
+            ><span>&nbsp;{{ countSelected }}&nbsp;</span>Selected
+          </label></a
+        >
+      </div>
+      <div class="clear_filters" (click)="clearFilter()">
+        <a *ngIf="ShowClearFilter == true"> <label>Clear Filter </label></a>
+      </div>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>
